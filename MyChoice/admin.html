@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Favourite</title>
+  <script src="lib/jquery-2.1.3.min.js"></script> <!-- jQuery -->
+  <script src="lib/underscore-min.js"></script> <!-- Underscore -->
+  <script src="lib/backbone-min.js"></script> <!-- Backbone -->
+  <!-- Thêm trong <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="tmp/css/admin.css">
+</head>
+<body class="body">
+  <div class="admin-ui" id="container">
+    <div class="header"></div>
+    <div class="main">
+      <div class="main-left">
+        <div class="menu-admin">
+          <h2>Admin favourite</h2>
+          <tr>
+            <p>Quản lý âm nhạc yêu thích</p>
+            <ul>
+              <li><a href="#search">Màn hình tìm kiếm</a></li>
+              <li><a href="#">Màn hình thêm mới</a></li>
+            </ul>
+          </tr>
+        </div>
+      </div>
+      <div class="main-right">
+        <div id="loading" style="display: none;">Loading...</div>
+        <h2>Màn hình tìm kiếm</h2>
+        <div id="main-body"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="public/routes/routes.js"></script>
+</body>
+</html>

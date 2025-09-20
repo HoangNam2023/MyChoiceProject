@@ -1,0 +1,70 @@
+<form id="edit-form" method="post">
+  <table>
+    <tr>
+      <td class="set-w-130px">
+        <strong>ID</strong>
+      </td>
+      <td>
+        <input type="text" name="id" value="<%= _.escape(id) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Tên bài hát</strong>
+      </td>
+      <td>
+        <input type="text" name="title" value="<%= _.escape(title) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Nhạc sĩ</strong>
+      </td>
+      <td>
+        <input type="text" name="artist" value="<%= _.escape(artist) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Album</strong>
+      </td>
+      <td>
+        <input type="text" name="album" value="<%= _.escape(album) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Ngày phát hành</strong>
+      </td>
+      <td>
+        <input type="text" name="release_year" value="<%= _.escape(release_year) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Ngày tạo</strong>
+      </td>
+      <td>
+        <input type="datetime-local" name="created_at" value="<%= _.escape(created_at) %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Ngày cập nhật</strong>
+      </td>
+      <td>
+        <input type="datetime-local" name="updated_at" value="<%= _.escape(updated_at) %>">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="set-text-c">
+        <button class="back-btn" type="submit">
+          <i class="fas fa-arrow-left"></i> Quay lại
+        </button>
+        <button class="update-btn" type="submit">
+          <i class="fas fa-sync-alt"></i> Cập nhật
+        </button>
+      </td>
+    </tr>
+  </table>
+</form>
