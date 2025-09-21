@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // Kết nối database
-$dsn = 'mysql:host=localhost;dbname=favorites;charset=utf8';
+$dsn = 'mysql:host=localhost;dbname=myChoice;charset=utf8';
 $username = 'root';
 $password = '';
 

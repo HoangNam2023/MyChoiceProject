@@ -3,7 +3,7 @@ import BaseModel from '../base/BaseModel.js';
 class FavouriteMusicModelUpdate extends BaseModel {
   /* Thu thập thông tin url */
   url() {
-    return `http://localhost/php/favouriteFuture/API/favouriteAPIUpdate.php`;
+    return `http://localhost/MyChoiceProject/MyChoice/API/favouriteAPIUpdate.php`;
   }
 
   /* Trả về các giá trị mặc định cho model. */

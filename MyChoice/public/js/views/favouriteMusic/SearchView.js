@@ -33,7 +33,7 @@ class FavouriteMusicSearchView extends BaseSearchView {
 
   handleAddClick(e) {
     e.preventDefault();
-    window.location.href = '/php/favouriteFuture/admin.html#add';
+    window.location.href = '/MyChoiceProject/MyChoice/admin.html#add';
   }
 
   render() {
@@ -48,11 +48,11 @@ class FavouriteMusicSearchView extends BaseSearchView {
         <td>${_.escape(item.artist)}</td>
         <td>${_.escape(item.album)}</td>
         <td>
-          <a href="#favourite_music/${item.id}">
-            <i class="fa fa-pencil"></i> Chỉnh sửa
+          <a href="#favourite_music/${item.id}" class="edit">
+            <i class="fa fa-pencil"></i>
           </a> 
           <a href="#" class="trash">
-            <i class="fa fa-trash-o"></i> Xóa
+            <i class="fa fa-trash-o"></i>
           </a>
         </td>
       </tr>
