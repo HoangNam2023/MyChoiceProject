@@ -35,7 +35,7 @@ class FavouriteMusicDetailView extends BaseDetailView {
 
   handleBackClick(e) {
     e.preventDefault();
-    window.location.href = '/php/favouriteFuture/admin.html#search';
+    window.location.href = '/MyChoiceProject/MyChoice/admin.html#search';
   }
 
   /**

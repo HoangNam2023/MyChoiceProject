@@ -4,7 +4,7 @@ class FavouriteMusicModelDetail extends BaseModel {
   /* Thu thập thông tin url */
   url() {
     const id = this.get('id');
-    return `http://localhost/php/favouriteFuture/API/favouriteAPIdetail.php?id=${encodeURIComponent(id)}`;
+    return `http://localhost/MyChoiceProject/MyChoice/API/favouriteAPIdetail.php?id=${encodeURIComponent(id)}`;
   }
 
   /* Trả về các giá trị mặc định cho model. */
